@@ -13,8 +13,8 @@
 
 ## Roadmap
 
-- [x] Add Ship folder generator command
-- [x] Auto import MainServiceProvider to ShipProvider
+- [x] Add Stem folder generator command
+- [x] Auto import MainServiceProvider to StemProvider
 - [x] Remove RouteServiceProvider
 - [x] Support Filament v3, add FilamentPlugin to generator
 - [x] Update Arbour installing documentation
@@ -27,10 +27,10 @@ You can install the package via composer:
 composer require iadewunmi/arbour
 ```
 
-And run this command to copy **Ship** folder and import ShipProvider
+And run this command to copy **Stem** folder and import StemProvider
 
 ```bash
-php artisan arbour:install
+php artisan arbour:init
 ```
 
 You can try running this command to check the successful installation **Arbour**:
@@ -62,7 +62,7 @@ php artisan make:arbour
 Standard Container's Structure:
 
 ```
-Container
+Branch
 	├── Database
 	├── Models
 	├── Providers
@@ -87,7 +87,7 @@ Container
 Filament v2 Structure:
 
 ```
-Container
+Branch
 	├── Providers
 	│   └── FilamentServiceProvider.php
 	└── UI
@@ -99,7 +99,7 @@ Container
 Filament v3 Structure:
 
 ```
-Container
+Branch
 	└── UI
 	    └── Filament
 	        ├── Resources
@@ -128,7 +128,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Anastas Mironov](https://github.com/ast21)
+- [Ifeoluwa Adewunmi](https://github.com/ife-adewunmi)
 - [All Contributors](../../contributors)
 
 ## License
