@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }}\{{ class }}\Pages;
+
+use App\Stem\Abstracts\Filament\Pages\AbstractListRecords;
+use Filament\Pages\Actions;
+use {{ namespace }}\{{ class }};
+
+class List{{ modelName }} extends AbstractListRecords
+{
+    protected static string $resource = {{ class }}::class;
+
+    protected function getActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
+        ];
+    }
+}

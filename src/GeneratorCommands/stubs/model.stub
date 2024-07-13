@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ factoryNamespace }};
+use App\Stem\Abstracts\Models\AbstractModel;
+
+class {{ class }} extends AbstractModel
+{
+    protected $fillable = [
+        //
+    ];
+
+    protected static function newFactory(): {{ class }}Factory
+    {
+        return new {{ class }}Factory();
+    }
+}

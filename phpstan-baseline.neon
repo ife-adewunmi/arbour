@@ -1,0 +1,11 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Command \"make\\:porto\\-branch\" does not have argument \"container\"\\.$#"
+			count: 3
+			path: src/GeneratorCommands/AbstractGeneratorCommand.php
+
+		-
+			message: "#^Command \"make\\:porto\\-container\" does not have argument \"container\"\\.$#"
+			count: 1
+			path: src/GeneratorCommands/ContainerGenerator.php

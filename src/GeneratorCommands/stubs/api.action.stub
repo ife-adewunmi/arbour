@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+{{ useNamespaces }}
+use App\Stem\Abstracts\Actions\AbstractAction;
+
+class {{ class }} extends AbstractAction
+{
+    {{ constructFunction }}
+
+    {{ runFunction }}
+}

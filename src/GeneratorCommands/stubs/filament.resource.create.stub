@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }}\{{ class }}\Pages;
+
+use App\Stem\Abstracts\Filament\Pages\AbstractCreateRecord;
+use {{ namespace }}\{{ class }};
+
+class Create{{ modelName }} extends AbstractCreateRecord
+{
+    protected static string $resource = {{ class }}::class;
+
+    protected function getActions(): array
+    {
+        return [
+            //
+        ];
+    }
+}

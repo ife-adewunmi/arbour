@@ -1,0 +1,12 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Stem\Abstracts\Providers\AbstractMainServiceProvider;
+
+class MainServiceProvider extends AbstractMainServiceProvider
+{
+    protected array $serviceProviders = [
+        // Add your service providers here
+    ];
+}

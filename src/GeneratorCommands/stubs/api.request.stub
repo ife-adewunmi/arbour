@@ -1,0 +1,15 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use App\Stem\Abstracts\Requests\AbstractRequestData;
+
+class {{ class }} extends AbstractRequestData
+{
+    public function __construct(
+        // Add your request properties here
+    ) {
+    }
+}
