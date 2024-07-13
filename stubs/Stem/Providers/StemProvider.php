@@ -4,7 +4,7 @@ namespace App\Stem\Providers;
 
 use App\Stem\Abstracts\Providers\AbstractMainServiceProvider;
 
-class ShipProvider extends AbstractMainServiceProvider
+class StemProvider extends AbstractMainServiceProvider
 {
     public array $serviceProviders = [
         //
