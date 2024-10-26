@@ -2,7 +2,7 @@
 
 namespace App\Stem\Abstracts\Providers;
 
-use Arbour\Abstracts\BroadcastServiceProvider;
+use Iadewunmi\ModuleGenerator\Abstracts\Providers\BroadcastServiceProvider;
 
 abstract class AbstractBroadcastServiceProvider extends BroadcastServiceProvider
 {

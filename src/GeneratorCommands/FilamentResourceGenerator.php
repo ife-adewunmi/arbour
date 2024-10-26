@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 
 class FilamentResourceGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-filament-resource';
+    protected $name = 'make:arb:filament-resource';
 
     protected $description = 'Create a new Filament Resource files';
 

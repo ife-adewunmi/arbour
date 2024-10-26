@@ -4,7 +4,7 @@ namespace Arbour\GeneratorCommands;
 
 class ModelGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-model';
+    protected $name = 'make:arb:model';
 
     protected $description = 'Create a new Model class';
 

@@ -4,7 +4,7 @@ namespace Arbour\GeneratorCommands;
 
 class ApiResourceGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-api-resource';
+    protected $name = 'make:arb:api-resource';
 
     protected $description = 'Create a new API Resource class';
 
@@ -14,7 +14,7 @@ class ApiResourceGenerator extends AbstractGeneratorCommand
 
     protected string $folderInsideBranch = 'UI/API/Resources';
 
-    protected function getNameInput()
+    protected function getNameInput(): string
     {
         return parent::getNameInput().'Resource';
     }

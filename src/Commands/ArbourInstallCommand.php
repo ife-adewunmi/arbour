@@ -11,7 +11,7 @@ use Illuminate\Filesystem\Filesystem;
 
 class ArbourInstallCommand extends Command
 {
-    protected $signature = 'arbour:init';
+    protected $signature = 'arb:init';
 
     protected $description = 'Install Arbour Package';
 

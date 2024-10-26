@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 
 class ApiRoutesGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-api-routes';
+    protected $name = 'make:arb:api-routes';
 
     protected $description = 'Create a new Route file';
 

@@ -14,14 +14,15 @@ abstract class AbstractGeneratorCommand extends GeneratorCommand
 {
     protected string $stubName;
 
-    protected string $folderInsideBranch;
+    protected string $folderInsideBranch = '';
 
     protected function getArguments(): array
     {
         return [
             ['name', InputArgument::REQUIRED, 'The name of the '.strtolower($this->type)],
             ['branch', InputArgument::REQUIRED, 'The branch name'],
-            ['folder', InputArgument::OPTIONAL, 'The folder name', 'Branches'],
+            ['section', InputArgument::OPTIONAL, 'The section name', 'AppSection'],
+            ['folder', InputArgument::OPTIONAL, 'The folder name'],
         ];
     }
 

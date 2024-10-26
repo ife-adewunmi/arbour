@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 
 class MigrationGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-migration';
+    protected $name = 'make:arb:migration';
 
     protected $description = 'Create a new Migration file';
 

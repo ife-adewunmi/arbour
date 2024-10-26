@@ -4,7 +4,7 @@ namespace Arbour\GeneratorCommands;
 
 class ProviderGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-provider';
+    protected $name = 'make:arb:provider';
 
     protected $description = 'Create a new ServiceProvider class';
 

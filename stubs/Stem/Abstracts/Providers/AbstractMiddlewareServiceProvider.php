@@ -2,7 +2,7 @@
 
 namespace App\Stem\Abstracts\Providers;
 
-use Arbour\Abstracts\MiddlewareServiceProvider;
+use Iadewunmi\ModuleGenerator\Abstracts\Providers\MiddlewareServiceProvider;
 
 abstract class AbstractMiddlewareServiceProvider extends MiddlewareServiceProvider
 {

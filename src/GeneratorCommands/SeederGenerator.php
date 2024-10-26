@@ -2,17 +2,17 @@
 
 namespace Arbour\GeneratorCommands;
 
-class FactoryGenerator extends AbstractGeneratorCommand
+class SeederGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arb:factory';
+    protected $name = 'make:arb:seeder';
 
-    protected $description = 'Create a new Factory class';
+    protected $description = 'Create a new Seeder class';
 
     protected $type = 'Factory';
 
-    protected string $stubName = 'factory.stub';
+    protected string $stubName = 'seeder.stub';
 
-    protected string $folderInsideBranch = 'Database/Factories';
+    protected string $folderInsideBranch = 'Database/Seeders';
 
     protected function getVariables(): array
     {
@@ -27,6 +27,6 @@ class FactoryGenerator extends AbstractGeneratorCommand
 
     protected function getNameInput(): string
     {
-        return parent::getNameInput().'Factory';
+        return parent::getNameInput().'Seeder';
     }
 }

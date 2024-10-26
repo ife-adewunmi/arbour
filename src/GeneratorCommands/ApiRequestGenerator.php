@@ -4,18 +4,18 @@ namespace Arbour\GeneratorCommands;
 
 class ApiRequestGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-api-request';
+    protected $name = 'make:arb:api-request';
 
     protected $description = 'Create a new Request class';
 
-    protected $type = 'RequestDTO';
+    protected $type = 'DTO';
 
     protected string $stubName = 'api.request.stub';
 
-    protected string $folderInsidebranch = 'UI/API/RequestDTO';
+    protected string $folderInsideBranch = 'UI/API/DTO/Requests';
 
-    protected function getNameInput()
+    protected function getNameInput(): string
     {
-        return parent::getNameInput().'RequestDTO';
+        return parent::getNameInput().'DTO';
     }
 }
