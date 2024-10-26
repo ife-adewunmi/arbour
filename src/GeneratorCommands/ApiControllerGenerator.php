@@ -6,7 +6,7 @@ use Symfony\Component\Console\Input\InputOption;
 
 class ApiControllerGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-api-controller';
+    protected $name = 'make:arb:api-controller';
 
     protected $description = 'Create a new API Controller class';
 
@@ -27,16 +27,16 @@ class ApiControllerGenerator extends AbstractGeneratorCommand
         ];
 
         if ($this->option('actions')) {
-            $this->call('make:arbour-api-dto', $arguments);
+            $this->call('make:arb:api-dto', $arguments);
 
-            $this->call('make:arbour-api-request', array_merge($arguments, ['name' => "Create$name"]));
-            $this->call('make:arbour-api-request', array_merge($arguments, ['name' => "Update$name"]));
+            $this->call('make:arb:api-request', array_merge($arguments, ['name' => "Create$name"]));
+            $this->call('make:arb:api-request', array_merge($arguments, ['name' => "Update$name"]));
 
-            $this->call('make:arbour-api-action', $this->getListAction());
-            $this->call('make:arbour-api-action', $this->createAction());
-            $this->call('make:arbour-api-action', $this->getByIdAction());
-            $this->call('make:arbour-api-action', $this->updateByIdAction());
-            $this->call('make:arbour-api-action', $this->deleteByIdAction());
+            $this->call('make:arb:api-action', $this->getListAction());
+            $this->call('make:arb:api-action', $this->createAction());
+            $this->call('make:arb:api-action', $this->getByIdAction());
+            $this->call('make:arb:api-action', $this->updateByIdAction());
+            $this->call('make:arb:api-action', $this->deleteByIdAction());
 
         }
     }
@@ -135,7 +135,7 @@ class ApiControllerGenerator extends AbstractGeneratorCommand
 
         $useNamespaces = "use {$this->getBranchNamespace()}\\Models\\$name;\n";
         $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\{$name}DTO;\n";
-        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\RequestDTO\\Create{$name}RequestDTO;";
+        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\Requests\\Create{$name}RequestDTO;";
 
         $arguments = "Create{$name}RequestDTO \$requestDTO";
         $return = ": {$name}DTO";
@@ -176,7 +176,7 @@ class ApiControllerGenerator extends AbstractGeneratorCommand
 
         $useNamespaces = "use {$this->getBranchNamespace()}\\Models\\$name;\n";
         $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\{$name}DTO;\n";
-        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\RequestDTO\\Update{$name}RequestDTO;";
+        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\Requests\\Update{$name}RequestDTO;";
 
         $arguments = "Update{$name}RequestDTO \$requestDTO, string \$id";
         $return = ": {$name}DTO";
@@ -200,7 +200,7 @@ class ApiControllerGenerator extends AbstractGeneratorCommand
 
         $useNamespaces = "use {$this->getBranchNamespace()}\\Models\\$name;\n";
         $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\{$name}DTO;\n";
-        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\RequestDTO\\Update{$name}RequestDTO;";
+        $useNamespaces .= "use {$this->getBranchNamespace()}\\UI\\API\\DTO\\Requests\\Update{$name}RequestDTO;";
 
         $arguments = 'string $id';
         $return = ': ?bool';

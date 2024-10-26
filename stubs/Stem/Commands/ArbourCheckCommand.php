@@ -6,7 +6,7 @@ use App\Stem\Abstracts\Commands\AbstractConsoleCommand;
 
 class ArbourCheckCommand extends AbstractConsoleCommand
 {
-    protected $signature = 'arbour:check';
+    protected $signature = 'arb:check';
 
     protected $description = 'Arbour check example command';
 

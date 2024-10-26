@@ -2,8 +2,8 @@
 
 namespace App\Stem\Abstracts\Providers;
 
-use Arbour\Abstracts\PortoMainServiceProvider;
+use Arbour\Abstracts\ArbourMainServiceProvider;
 
-abstract class AbstractMainServiceProvider extends PortoMainServiceProvider
+abstract class AbstractMainServiceProvider extends ArbourMainServiceProvider
 {
 }

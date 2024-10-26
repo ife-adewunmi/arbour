@@ -17,7 +17,7 @@ use function Laravel\Prompts\text;
  */
 class BranchGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-branch';
+    protected $name = 'make:arb:branch';
 
     protected $description = 'Create a new Branch';
 
@@ -65,22 +65,23 @@ class BranchGenerator extends AbstractGeneratorCommand
         $this->makeProviders();
 
         if ($this->option('model')) {
-            $this->call('make:arbour-migration', $arguments);
-            $this->call('make:arbour-model', $arguments);
-            $this->call('make:arbour-factory', $arguments);
+            $this->call('make:arb:migration', $arguments);
+            $this->call('make:arb:model', $arguments);
+            $this->call('make:arb:factory', $arguments);
+            $this->call('make:arb:seeder', $arguments);
         }
 
         if ($this->option('api')) {
-            $this->call('make:arbour-api-controller', [...$arguments, '--actions' => true]);
-            $this->call('make:arbour-api-routes', $arguments);
+            $this->call('make:arb:api-controller', [...$arguments, '--actions' => true]);
+            $this->call('make:arb:api-routes', $arguments);
         }
 
         if ($this->option('filament2')) {
-            $this->call('make:arbour-filament2-resource', $arguments);
+            $this->call('make:arb:filament2-resource', $arguments);
         }
 
         if ($this->option('filament3')) {
-            $this->call('make:arbour-filament-resource', $arguments);
+            $this->call('make:arb:filament-resource', $arguments);
         }
 
     }

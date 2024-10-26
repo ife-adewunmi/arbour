@@ -17,7 +17,7 @@ trait LocalizationLoaderTrait
     private function loadLocals($directory, $containerName): void
     {
         if (File::isDirectory($directory)) {
-            $this->loadTranslationsFrom($directory, "container@$containerName");
+            $this->loadTranslationsFrom($directory, "branch@$containerName");
             $this->loadJsonTranslationsFrom($directory);
         }
     }

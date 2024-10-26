@@ -4,7 +4,7 @@ namespace Arbour\GeneratorCommands;
 
 class ApiDTOGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arbour-api-dto';
+    protected $name = 'make:arb:api-dto';
 
     protected $description = 'Create a new DTO class';
 

@@ -2,7 +2,7 @@
 
 namespace App\Stem\Abstracts\Providers;
 
-use Arbour\Abstracts\AuthServiceProvider;
+use Iadewunmi\ModuleGenerator\Abstracts\Providers\AuthServiceProvider;
 
 abstract class AbstractAuthServiceProvider extends AuthServiceProvider
 {

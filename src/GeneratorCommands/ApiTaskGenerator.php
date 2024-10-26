@@ -4,13 +4,13 @@ namespace Arbour\GeneratorCommands;
 
 use Symfony\Component\Console\Input\InputArgument;
 
-class ApiActionGenerator extends AbstractGeneratorCommand
+class ApiTaskGenerator extends AbstractGeneratorCommand
 {
-    protected $name = 'make:arb:api-action';
+    protected $name = 'make:arb:api-task';
 
-    protected $description = 'Create a new Action class';
+    protected $description = 'Create a new Task class';
 
-    protected $type = 'Action';
+    protected $type = 'Task';
 
     protected string $stubName = 'api.action.stub';
 

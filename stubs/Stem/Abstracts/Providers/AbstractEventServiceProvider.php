@@ -2,7 +2,7 @@
 
 namespace App\Stem\Abstracts\Providers;
 
-use Arbour\Abstracts\EventServiceProvider;
+use Iadewunmi\ModuleGenerator\Abstracts\Providers\EventServiceProvider;
 
 abstract class AbstractEventServiceProvider extends EventServiceProvider
 {

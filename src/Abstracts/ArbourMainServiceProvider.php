@@ -10,6 +10,7 @@ abstract class ArbourMainServiceProvider extends LaravelServiceProvider
     use AutoLoaderTrait;
 
     protected array $serviceProviders = [];
+    protected array $aliases = [];
 
     public function register(): void
     {
